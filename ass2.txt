@@ -1,0 +1,558 @@
+Theory Assignments:
+
+1:Difference between inline, internal, and external CSS:
+
+Inline styles are styles that are applied to a specific element within the body section of the webpage. 
+
+An internal CSS is used to define a style for a single HTML page. An internal CSS is defined in the <head> section of an HTML page, 
+within a <style> element.
+
+An external style sheet is a separate CSS file that can be accessed by creating a link within the head section of the webpage.
+
+Inline CSS styles an individual HTML element directly, internal CSS styles an entire HTML document within the <head> section, 
+and external CSS styles multiple HTML documents by linking to a separate CSS file. 
+
+2:CSS selectors and list the types of selectors 
+
+CSS Selectors:CSS selectors are used to find or select the HTML elements you want to style.
+
+We can divide CSS selectors into five categories:
+
+Simple selectors select elements based on name, id, class.
+Combinator selectors select elements based on a specific relationship between them.
+Pseudo-class selectors select elements based on a certain state.
+Pseudo-elements selectors select and style a part of an element.
+Attribute selectors select elements based on an attribute or attribute value.
+
+3: The CSS box model and its components:
+ The "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. 
+It consists of: content, padding, borders and margins.
+Explanation of the different parts:
+
+Content - The content of the box, where text and images appear
+Padding - Clears an area around the content. The padding is transparent
+Border - A border that goes around the padding and content
+Margin - Clears an area outside the border. The margin is transparent
+The box model allows us to add a border around elements, and to define space between elements. 
+
+Ass 1:: Practice basic text styling using CSS
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title and Paragraph Example</title>
+    <style>
+        h1{
+            font-family: 24px;
+            color: navy;
+            text-align: center;
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            color: palevioletred;
+            text-align: justify;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Page</h1>
+    <p>
+        This is a paragraph of text that demonstrate the use of CSS styling.
+        We are trying to create stylish page with CSS.
+    </p>
+    
+</body>
+</html>
+
+Ass 2: Practice using colors and background properties:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Sections Exmple</title>
+    <link rel="stylesheet" href="ass2.css">
+</head>
+<body>
+    <div id="label">
+        <h1>Welcome to My Website</h1>
+    </div>
+
+    <div id="Introduction">
+        <p>This is the introduction section with a gradient background.</p>
+    </div>
+    <div id="Content">
+        <p>This is the main content area of the page where most information is displayed.</p>
+    </div>
+    <div id="Footer">
+        <p>Footer information goes here.</p>
+    </div>
+    
+</body>
+</html>
+
+body{
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#label {
+    background-color: green;
+    padding: 20px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+#introduction{
+    background-color: blueviolet;
+    padding: 20px;
+    width: 85%;
+    margin: 10px auto;
+}
+
+#content {
+    background-color: blue;
+    padding: 20px;
+    width: 80%;
+    margin:10px auto;
+}
+#footer {
+    background-color: brown;
+    padding: 20px;
+    width: 75%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+
+
+Ass 3: Learn how to use borders, rounded corners, and shadows.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Example</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: auto;
+        }
+        .card{
+            background-color: blueviolet;
+            border: 2px;
+            border-radius: 15px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            padding: 20px;
+            text-align: center;
+        }
+        .card h2{
+            margin-top: 0;
+            color: red;
+        }
+        .card p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h2>Card Example</h2>
+        <p>This is a simple card with a border,rounded corners,and a shadow effect.</p>
+    </div>
+    
+</body>
+</html>
+
+Ass 4: : Practice customizing list styles:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom List Example</title>
+    <link rel="stylesheet" href="ass4.css">
+</head>
+<body>
+    <h1>My Custom Lists</h1>
+    <h2>Ordered list</h2>
+    <ol class="custom-ol">
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+    </ol>
+
+    <h2>Unordered List</h2>
+    <ul class="custom-ul">
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Cherry</li>
+    </ul>
+    
+</body>
+</html>
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+    padding: 20px;
+}
+.custom-ol, .custom-ul{
+    list-style-type: none;
+    padding-left: 0;
+
+} 
+.custom-ol li{
+    position: relative;
+    padding-left: 25px;
+    color: darkred;
+    font-style: italic;
+
+}
+.custom-ol li::before{
+    content: icon;
+    position: relative;
+    left:0;
+    color: chocolate
+}
+.custom-ul li{
+    position: relative;
+    padding-left: 25px;
+    color: chocolate;
+    font-weight: bold
+}
+
+,.custom-ul li::before{
+    content: inherit;
+    position: absolute;
+    left: 0;
+    color: orange;
+}
+
+
+Ass 5: Style a basic navigation bar using CSS:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="ass5.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+    
+</body>
+</html>
+
+
+body{
+    margin: 0;
+    padding: 0%;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+.navbar{
+    background-color: aqua;
+    padding: 10px 0;
+}
+
+.navbar a{
+    display: inline-block;
+    color: white;
+    padding: 12px 20px;
+    background-color: blue;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: chocolate;
+}
+
+Ass 6:Learn to use Flexbox for creating responsive layouts:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <link rel="stylesheet" href="ass6.css">
+</head>
+<body>
+    <div class="container"
+    <header class="header">
+        <h1>My Webpage</h1>
+    </header>
+    <main class="main-content">
+        <p>Welcome to my main content area.Here you will find the detail description about my webpage.</p>
+    </main>
+    <footer class="footer">
+        <p>2025 My Webpage</p>
+    </footer>
+    
+</body>
+</html>
+
+
+body{
+    margin: auto;
+    padding: 0%;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.header,.main-content,.footer {
+    background-color: indianred;
+    padding: 20px;
+    margin: 150px;
+    width: 90%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.footer {
+    position: static;
+}
+
+@media (min-width:768px){
+    .container{
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+    .header..main-content,.footer{
+        width: 50%;
+    }
+}
+
+
+Ass 7:Use CSS Grid for creating a gallery layout:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid System</title>
+    ><link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    <h2>Responsive Image Grid</h2>
+    <div class="grid-container">
+        <div class="grid-item"><img src="./sass/h1.jpeg" alt="naturel"></div>
+        <div class="grid-item"><img src="./sass/h2.jpeg" alt="naturel"></div>
+        <div class="grid-item"><img src="./sass/h3.jpeg" alt="naturel"></div>
+        <div class="grid-item"><img src="./sass/h4.jpeg" alt="naturel"></div>
+        <div class="grid-item"><img src="./sass/h5.jpeg" alt="naturel"></div>
+        <div class="grid-item"><img src="./sass/h6.jpeg" alt="naturel"></div>
+    
+</body>
+</html>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: aqua;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 15px;
+}
+.grid-item{
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgb(0 ,0, 0, 0.1)
+    overflow: hidden;
+    text-align: center:
+}
+.grid-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+Ass 8:Practice styling buttons with CSS:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Styling</title>
+    <link rel="stylesheet" href="ass8.css">
+</head>
+<body>
+<div class="button-container">
+    <button class="btn primary">Primary</button>
+    <button class="btn secondary">Secondary</button>
+    <button class="btn danger">Danger</button>
+</div>
+    
+</body>
+</html>
+
+
+.btn{
+    padding: 12px,24p;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px(0,0,0,0.2);
+    transition: background color 0.3s ease, transform 0.3s ease-in;
+    margin: 10px;
+}
+
+.primary{
+    background-color: aqua;
+}
+.primary:hover {
+    background-color: blueviolet;
+    transform: translateY(-2px);
+}
+.secondary{
+    background-color: cadetblue;
+}
+
+.secondary:hover {
+    background-color: red;
+    transform: translateY(-2px);
+}
+
+.danger{
+    background-color: green;
+}
+
+.danger:hover {
+    background-color: chocolate;
+    transform: translateY(-2px);
+}
+
+Ass 9:
+
+Ass 10:Practice styling forms with CSS:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="ass10.css">
+</head>
+<body>
+    <div class="form-container">
+        <form class="Contact-form">
+            <h2>Contact Us</h2>
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    
+</body>
+</html>
+
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: cornflowerblue;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.form-container{
+    width: auto;
+    background-color: azure;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.contact-form h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact-form {
+    width: auto;
+    padding: 30px;
+    font-size: 16px;
+    border-color: azure;
+    border-radius: 10px;
+}
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: burlywood;
+    outline: none;
+}
+.contact-form button {
+    width: 20px;
+    background-color: #007b00;
+    color: azure;
+    font-size: 16px;
+    padding: 12px;
+    border-radius: 10px;
+    cursor:  -8410;
+    cursor: pointer;
+
+}
+.contact-form button:hover {
+    background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
