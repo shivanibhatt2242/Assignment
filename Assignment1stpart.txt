@@ -1,0 +1,618 @@
+
+Introduction to Website Design and HTML Basics:
+
+Ans1:  Structure of an HTML Documrnt:HTML (Hypertext Markup Language) is the standard markup language used to create web pages. It structures web pages using predefined tags and attributes, instructing the browser on how to display content.
+Explanation of the Structure:
+DOCTYPE Declaration (<DOCTYPE html>): This specifies the HTML version and typically indicates HTML.
+
+Root Element (<html>):The <html> tag is the root element that encompasses the entire HTML document structure. It serves as the parent to both the <head> and <body> tags
+Head Section (<head>): The <head> tag contains meta-information about the HTML document, such as the title, character set, and author. It includes: <meta charset="UTF-8">: Specifies the character encoding.
+Body Section (<body>):The <body> tag contains all the content that you want to display on the web page. This includes text, images, links, and other elements.  
+
+Ans:2 Common HTML Tags:
+HTML (HyperText Markup Language) is the standard language for creating web pages. It uses various tags to structure and format content. Here are some of the most commonly used HTML tags:
+<html>: The root element of an HTML document. It encapsulates all other elements.
+
+<head>: Contains meta-information about the document, such as the title, styles, and meta tags.
+
+<title>: Sets the title of the document, which appears in the browser tab.
+
+<body>: Contains the content of the HTML document, such as text, images, and links.
+<div>: Defines a division or section in an HTML document.
+
+Ans:3 Difference between block-level and inline elements in HTML.
+Block-level elements:
+Block-level elements always start on a new line and take up the full width available, stretching out to the left and right as far as it can. They create a "block" of content and can contain other block-level elements or inline elements. 
+Common examples of block-level elements include:
+<div>: Defines a division or section in an HTML document.
+<p>: Defines a paragraph.
+<h1> to <h6>: Define HTML headings.
+<ul> and <ol>: Define unordered and ordered lists, respectively.
+<table>: Defines a table.
+
+Inline Elements:
+Inline elements do not start on a new line and only take up as much width as necessary. They are typically used for smaller pieces of content within block-level elements. Common examples of inline elements include:
+<span>: Used to group inline-elements in a document.
+<a>: Defines a hyperlink.
+<img>: Embeds an image.
+<strong>: Defines important text.
+<em>: Defines emphasized text.
+
+Assignment 1:
+
+Basic HTML Document Structure:
+
+Practical 1:Understand the basic structure of an HTML document and practice using
+common tags.
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Country</title>
+</head>
+<body>
+    <h1>India</h1>
+    <p>
+        India is a vast country with a rich culture and history. It's one of the world's oldest civilizations and is home to many languages and religions. 
+    </p>
+    <hr>
+    <h2>
+        Geography:
+    </h2>
+    <p>
+        India is the seventh largest country in the world. 
+        It's bordered by the Himalayas in the north, the Arabian Sea to the west, and the Bay of Bengal to the east. 
+        India has many lakes, including Sambhar Lake, Vembanad Lake, and Dal Lake. 
+        It also has many gulfs, including the Gulf of Cambay, Gulf of Kutch, and the Gulf of Mannar.
+    </p>
+    
+</body>
+</html>
+
+Assignment 2:Practice using list tags and linking to other pages:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Favorite Hobbies</title>
+</head>
+<body>
+    <h1>My Hobbies are:
+    </h1>
+    <ol>
+         <li>Cooking:
+            <ul>
+                <li>Chinese Food</li>
+                <Li>Punjabi Dishes</Li>
+                <li>South Indian Food</li>
+                <li>Sweet Dishes</li>
+            </ul>
+         </li>
+         <li>Listening Music<a href="https://www.jiosaavn.com/featured/100-years-100-songs/Jw,y2RsW58E_"> old songs </a></li>
+        <li>Singing</li>
+    </ol>
+    
+</body>
+</html>
+    
+Assignment 3:Learn how toadd images and embedvideos in HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travel Memories</title>
+</head>
+<body>
+    <h1>Dubai</h1>
+     <pre>
+        The Burj Khalifa is the world's tallest building, located in Dubai, United Arab Emirates.
+        It's a mixed-use skyscraper that houses offices, residences, restaurants, and more.
+    </pre> 
+    <a href="https://www.youtube.com/watch?v=SqFx0cBR0oo&pp=ygUVYnVyaiBraGFsaWZhIGJ1aWxkaW5n">Click Link</a>
+    <img src="./image/image.jpg" alt="" height="200px" width="200px">
+
+</body>
+</html>
+
+Assignment 4:Learn how tocreate forms using HTML:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <table>
+            <tr>
+                <th colspan="2">Registration form</th> 
+            </tr>
+            <tr>
+                <td><label for="name">Name: </label></td>
+                <td><input type="text" name="name" id="name" required</td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="email">Email:  </label>
+                    <td><input type="email" name="email" id="email" required</td>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="message">Message</label></td>
+                <td>
+                    <textarea name="message" id="message"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><button type="submit">Submit</button></td>
+            </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
+
+Assignment 5: Practice using table tags to organize data:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cource Schedule</title>
+    <style>
+        table,tr,th,td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table border="1">
+           <tr>
+        <th>Day</th>
+        <th>Course Name</th>
+        <th>Time</th>
+ </tr>
+<tr>
+    <td>Monday</td>
+    <td>Web Designing</td>
+    <td>2pm</td>
+</tr>
+<tr>
+    <td>Tuesday</td>
+    <td>Javascript</td>
+    <td>6pm</td>
+</tr>
+<tr>
+    <td>Wednesday</td>
+    <td>Database</td>
+    <td>4pm</td>
+</tr>
+
+    </table>
+    
+    
+</body>
+</html>
+
+Assignment 6:Combine different HTML tags to create a basic profile page:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+</head>
+<body>
+    <h1>Welcome to Shivani's Profile</h1>
+    <section id="Introduction">
+        <h2>Introduction</h2>
+        <p>My name is Shivani Bhatt.I have done M.sc in Physics.I live in Vadodara</p>
+    </section>
+    <section id="Skils">
+        <h3>
+            I have skills like :
+        </h3>
+        <ul>
+            <li>Communication</li>
+            <li>Time management</li>
+            <li>learning new things</li>
+        </ul>
+        <h4>My Hobbies are:
+        </h4>
+        <ol>
+                 <li>Cooking</li>
+                 <li>Dancing</li>
+                <li>Photography</li>
+        </ol>
+    </section>
+    
+    <section id="Contact">
+        <h3>Contact Me</h3>
+        <label for="Email">Email</label>
+        <a href="mailto:shivani.bakshi2242.gmail.com">Send Email</a>
+        <label for="Phone Number">Phone Number</label>
+        <a href="tel:+9199264555">+9199264555</a>
+    </section>
+   
+    
+</body>
+</html>
+
+Assignment 7:  Practice building a basic navigation bar:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <h1>Welcome to My Portfolio</h1>
+    <nav>
+        <ul>
+         <li><a href="home">Home</a></li><br>
+         <li><a href="abount me">About Me</a></li><br>
+         <li><a href="portfolio">Portfolio</a></li><br>
+         <li><a href="contact">Contact</a></li>
+      </ul>
+    </nav>
+    <h2>Home</h2>
+    <p>
+        Welcome to my personal portfolio website.Here,you can view my work and get in touch.
+    </p>
+    <h3>About Me</h3>
+    <p>
+        Hi,I am Shivani Bhatt.I am learning Web designing for creating beautiful and functional website.
+    </p>
+    <h4>Portfolio</h4>
+    <p>
+        Here are my some recent practical.
+    </p>
+   
+        <a href="prac1.html">Practical 1</a><br>
+        <a href="prac2.html">Practical 2</a><br>
+        <a href="prac3.html">Practical 3</a><br>
+
+     <h3>Contact</h3>
+     <p>
+        If you would like to get in touch, Kindly follow the below methods.
+    </p>
+    <label for="Email">Email</label>
+    <a href="mailto:shivani.bakshi2242.gmail.com">Send Email</a>
+        <label for="Phone Number">Phone Number</label>
+        <a href="tel:+9199264555">+9199264555</a>
+    
+</body>
+</html>
+
+Assignment 8:: Practice linking between pages and organizing content across multiple pages.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Homepage</title>
+</head>
+<body>
+    <nav>
+        <ul>
+         <li><a href="home.html">Home</a></li><br>
+         <li><a href="about.html">About Me</a></li><br>
+         <li><a href="portfolio.html">Portfolio</a></li><br>
+       </ul>
+    </nav>
+    <h2>
+        <p>Welcome to my page.Here you can get all the information about me.</p>
+    </h2>
+    
+</body>
+</html>
+
+Home.html :
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <p>
+ Social media are interactive technologies that facilitate the creation, sharing and aggregation of content (such as ideas, interests, and other forms of expression) 
+ amongst virtual communities and networks.
+    </p>
+    <img src="./image/logo.jpg" alt="" height="500px" width="500px">
+    
+</body>
+</html>
+
+About.html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+</head>
+<body>
+    <h1>Welcome to Shivani's Profile</h1>
+    <section id="Introduction">
+        <h2>Introduction</h2>
+        <p>My name is Shivani Bhatt.I have done M.sc in Physics.I live in Vadodara</p>
+    </section>
+    <section id="Skils">
+        <h3>
+            I have skills like :
+        </h3>
+        <ul>
+            <li>Communication</li>
+            <li>Time management</li>
+            <li>learning new things</li>
+        </ul>
+        <h4>My Hobbies are:
+        </h4>
+        <ol>
+                 <li>Cooking</li>
+                 <li>Dancing</li>
+                <li>Photography</li>
+        </ol>
+        <img src="./image/girlimage.jpeg" alt="" height="100px" width="100px">
+        
+    </section>
+    
+</body>
+</html>
+
+Portfolio.html:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <p>
+        Here are my some recent projects.
+    </p>
+   
+        <a href="prac1.html">Project 1</a><br>
+        <a href="prac2.html">Project 2</a><br>
+        <a href="prac3.html">Project 3</a><br>
+         <h4>
+            In project 1 you can see the information abount India.<br>
+            In project 2 you can see the information abount My hobbies. <br>
+            In project 3 you can see the information abount My travel Designation.  
+        </h4>
+
+</body>
+</html>
+    
+Assignment 9:Practice embedding media and external content:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore New York City</title>
+</head>
+<body>
+    <p>
+        New York, often called New York Cityor NYC, is the most populous city in the United States, 
+        located at the southern tip of New York State on one of the world's largest natural harbors. 
+        The city comprises five boroughs, each coextensive with a respective county.
+    </p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387196.07665879064!2d-74.30914977179596!3d40.69667269554806!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sin!4v1740730871158!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <a href="https://www.bing.com/videos/riverview/relatedvideo?&q=new+york+city+on+youtube&&mid=DA18F316685ED3E83D17DA18F316685ED3E83D17&&mcid=FE71A5B069814E15BAAB212EC29174D2&FORM=VRDGAR">Click Link</a>
+    
+</body>
+</html>
+
+Assignment 10: Learn and practice using semantic HTML elements:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech News</title>
+</head>
+<body>
+    <nav>
+        <ul>
+         <li><a href="home2.html">Home</a></li><br>
+         <li><a href="latestnews.html">Latest News</a></li><br>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <article>
+        <h1>57 Labourers trapped in avlanche near Uttrakhand's Badrinath</h1>
+        DEHRADUN: An avalanche hit Uttarakhand's
+
+Read more at:
+<a href="https://timesofindia.indiatimes.com/articleshow/118623387.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst">Click Link</a>
+    </article>
+    <article>
+        <h1>President Murmu visits Statue of Unity</h1>
+        Vadodara: President Droupadi Murmu visited t ..
+
+Read more at:
+<a href="http://timesofindia.indiatimes.com/articleshow/118610653.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst">Click Link</a>
+    </article>
+    <article>
+        <h1>AMC Approves water resource management cell</h1>
+        Ahmedabad: The standing committee of the Ahmedabad M ..
+
+Read more at:
+<a href="https://timesofindia.indiatimes.com/articleshow/118610437.cms?utm_source=contentofinterest&utm_medium=text&utm_campaign=cppst">Click Link</a>
+    </article>
+        
+    <section id="Contact">
+        <h3>Contact Us</h3>
+        <label for="Email">Email</label>
+        <a href="mailto:shivani.bakshi2242.gmail.com">Send Email</a>
+        <label for="Phone Number">Phone Number</label>
+        <a href="tel:+9199264555">+9199264555</a>
+    </section>
+   
+    
+</body>
+</html>
+
+Home:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <h1>Welcome to our website! Here you can see latest news of India.</h1>
+    <p>Avalanche in Uttarakhand's Chamoli: An avalanche has struck near a Border Roads Organisation (BRO) camp in Chamoli, Uttarakhand, trapping 57 individuals under snow. Rescue operations are underway.</p>
+     <p>Pune Bus Rape Case Update: The accused in the Pune bus rape case, Dattatray Gade, has been arrested by Pune Police in Shirur Tehsil. The police had previously announced a ₹1 lakh reward for information leading to his arrest.</p>   
+     <p>Kiara Advani and Sidharth Malhotra Expecting First Child: Bollywood actors Kiara Advani and Sidharth Malhotra have announced that they are expecting their first child together.</p>   
+     <p>The GDP numbers in April-June and July-September too grew at a slower pace than was estimated by the central bank. 
+        The weak GDP numbers can be gauged from the consumption in the economy and latest stock market performance.</p>
+    <p>Delhi Assembly Speaker Vijender Gupta on Friday responded to Aam Aadmi Party (AAP MLA and former Delhi CM Atishi over her letter to him condemning the suspension of party MLAs. 
+        Citing the rules of the Delhi Assembly, the Speaker said that it is very clear that when a member is suspended, he is denied entry into these restricted areas, which is an established parliamentary convention. </p>
+</html>
+
+Latest News:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latest News</title>
+</head>
+<body>
+    <h1>Latest News</h1>
+
+        <a href="https://timesofindia.indiatimes.com/news">Click link</a>
+
+</body>
+</html>
+
+Contact:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+    <h3>Contact Us</h3>
+        <label for="Email">Email</label>
+        <a href="mailto:shivani.bakshi2242.gmail.com">Send Email</a>
+        <label for="Phone Number">Phone Number</label>
+        <a href="tel:+9199264555">+9199264555</a>
+
+    </body>
+    </html>
+
+Assignment 12: Practice working with images and structuring an image gallery layout.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery</title>
+</head>
+<body>
+    <h1>My Image Gallery</h1>
+    <ul>
+    <li><img src="/image/image1.jpg" alt="" height="200px" width="200px"></li>
+    </li><img src="/image/img2.jpeg" alt="" height="200px" width="200px"></li>
+    <li><img src="/image/img3.jpeg" alt="" height="200px" width="200px"></li>
+    <li><img src="/image/img4.webp" alt="" height="200px" width="200px"></li>
+    <li><img src="/image/img5.webp" alt="" height="200px" width="200px"></li>
+    <li><img src="/image/img6.jpg" alt="" height="200px" width="200px"></li>
+    </ul>
+</body>
+</html>
+
+Practicl Assignments:
+
+1: Createa basic HTML webpage:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example HTML Page</title>
+</head>
+<body>
+    <h1>Welcome to My Website</h1>
+      <p>This is the first paragraph of content. You can put an introduction here or some background information about your website.</p>
+    <h2>About Us</h2>
+      <p>Here is some information about what we do. We aim to provide high-quality content and make our website a useful resource for visitors.</p>
+    <h3>Our Services</h3>
+    <ul>
+        <li>Web Development</li>
+        <li>Graphic Designing</li>
+        <li>Content Creation</li>
+    </ul>
+    <p>We offer a variety of services that cater to different needs. Our team works hard to ensure each project exceeds expectations.</p>
+    <img src="/image/img7.png" alt="" height="200px" width="200px">
+</body>
+</html>
+
+2: Build asimple form with fields for name, email, and a submit button:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form</title>
+</head>
+<body>
+    <form action="" id="form">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+        </div>
+       <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+      </div>
+      <div>
+            <input type="submit" name="submit" value="submit" class="btn action-button">
+        </div>
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
