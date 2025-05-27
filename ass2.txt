@@ -817,6 +817,99 @@ CSS:body{
     color: #2ecc71;
 }
 
+Ass. 15 Objective:Use custom fonts and icons to enhance a page’s look.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Landing Page</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/regular.min.js"></script>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.8;
+            color: #333;
+        }
+        h1,h2{
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        }
+        .hero{
+            background: #f5f7fa;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero h1{
+            font-size: medium;
+            margin-bottom: 10px;
+        }
+        .hero p{
+            font-size: large;
+            color: #666;
+        }
+        .features{
+            background: #fff;
+            display: flex;
+            padding: 50px 20px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .feature{
+            max-width: 300px;
+            text-align: center;
+            margin: 20px;
+        }
+        .feature i{
+            font-size: 40px;
+            color: #007bff;
+            margin-bottom: 15px;
+        }
+        .contact{
+            background: #f0f0f0;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .contact h2{
+            margin-bottom: 15px;
+        }
+        .contact p{
+            color: #555;
+        }
+   </style>
+ </head>
+<body>
+    <section class="hero">
+        <h1>Welcome to our landing page</h1>
+        <p>Discover amazing features and connect with us today.</p>
+   </section>
+   <section class="features">
+    <div class="feature">
+        <i class="fas fa-rocket"></i>
+        <h2>Fast Performance</h2>
+        <p>Our solution delivers blazing fast results for your needs.</p>
+    </div>
+    <div class="feature">
+        <i class="fas fa-shield-alt"></i>
+        <h2>Secure Platform</h2>
+        <p>We priorities security to keep you data safe and private.</p>
+    </div>
+     <div class="feature">
+        <i class="fas fa-headset"></i>
+        <h2>24/7 Support</h2>
+        <p>Our team is always here to help,day or night.</p>
+     </div>
+   </section>
+   <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Reach out via email or follow us on social media.</p>
+
+   </section>
+</body>
+</html>
 
 
 
