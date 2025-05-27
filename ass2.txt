@@ -1,4 +1,5 @@
 Theory Assignments:
+2. Introduction to CSS and Styling Basics-
 
 1:Difference between inline, internal, and external CSS:
 
@@ -128,9 +129,6 @@ body{
     margin: 10px auto;
     text-align: center;
 }
-
-
-
 
 Ass 3: Learn how to use borders, rounded corners, and shadows.
 
@@ -355,7 +353,6 @@ body{
     }
 }
 
-
 Ass 7:Use CSS Grid for creating a gallery layout:
 
 <!DOCTYPE html>
@@ -463,6 +460,75 @@ Ass 8:Practice styling buttons with CSS:
 }
 
 Ass 9:
++!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Media Layout</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            padding: 16px;
+            font-size: 16px;
+        }
+        header, footer{
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            
+        }
+        
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin: 16px 0;
+        }
+        .section{
+            background-color: #f0f0f0;
+            padding: 16px;
+            border-radius: 8px;
+        }
+        @media (min-width: 768px){
+            .content{
+                flex-direction: row;
+            }
+            .section{
+                flex: 1;
+            }
+            .container{
+                padding: 30px;
+                font-size: 18px;
+            }
+        }
+        @media(min-width: 1024px){
+            .container{
+                padding: 48px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Main Header</h1>
+        </header>
+        <div class="content">
+            <div class="section">Section 1:Some media or content goes here.</div>
+            <div class="section">Section 2:More information or a media player.</div>
+            <div class="section">Section 3:Additional content or controls.</div>
+
+            <footer> @copy; 2025 Responsive Layout Demo</footer>
+        </div>
+ </body>
+</html>
 
 Ass 10:Practice styling forms with CSS:
 
@@ -537,6 +603,218 @@ body{
 }
 .contact-form button:hover {
     background-color: black;
+}
+
+Ass 11:Learn how touse pseudo-classes and pseudo-elements for styling:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style links with pseudo-classes></title>
+    <style>
+        a:link{
+            color: blueviolet;
+            text-decoration: none;
+        }
+        a:visited{
+            color: blue;
+        }
+        a:hover{
+            color: darkgreen;
+            text-decoration: underline;
+        }
+        a:active{
+            color: red;
+        }
+        p::first-line{
+            font-weight: bold;
+            color: darkcyan;
+        }
+        h1::before,
+        h2::before{
+            color: gold;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Main Heading</h1>
+    <h2>Subheading</h2>
+    <p>
+        This is a paragraph that demonstrates how the firstline can be styled diffrently from the rest of the text.
+    </p>
+    <nav>
+        <ul>
+            <li><a href="#link1">Link One</a></li>
+                <li><a href="#link2">Link Two</a></li>
+                    <li><a href="#link3">Link  Three</a></li>
+        </ul>
+    </nav>
+    
+</body>
+</html>
+
+Ass 12:  Objective: Practice using CSS variables to maintain color and theme consistency.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables Theme</title>
+    <link rel="stylesheet" href="prac12.css">
+</head>
+<body>
+    <header>
+        <h1>My Themed Website</h1>
+    </header>
+    <main>
+        <p>Welcome to our website.This is the main content area where you can learn more about our services and offers.</p>
+    </main>
+    <footer>
+        <p>&copy;2025 My Website</p>
+    </footer>
+    
+</body>
+</html>
+
+CSS::root{
+    --primary-color: #3498db;
+    --secondary-color : #f1f1f1;
+    --text-color: #333;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+main{
+    padding: 20px;
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    margin: 20px;
+    border-radius: 8px;
+}
+footer{
+    background-color: var(--primary-color);
+    color: white
+    text-align : center;
+    padding : 15px;
+    position: relative;
+    bottom : 0;
+    width:100%
+    justify-content:center;
+    
+}
+
+
+Ass 13:  Learn how to create basic CSS animations:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarnsition</title>
+    <link rel="stylesheet" href="tran2.css">
+</head>
+<body>
+    <div class="box">Box</div>
+    
+</body>
+</html>
+
+.box{
+    width: 150px;
+    height: 150px;
+    background: orange;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin:auto;  */
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out; 
+    transition:backgrond-color 2s ease-out;
+}
+.box:hover{
+    background-color: blue;
+    cursor: pointer;
+}
+
+Ass 14: Combine various CSS skills to style a product card:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width">
+    <title>Product CRD</title>
+    <link rel="stylesheet" href="prac14.css">
+</head>
+<body>
+    <div class="card">
+        <img src="https://www.google.com/imges" alt="Product Image"
+        <div class="card-content">
+            <h2 class="Product-title">Awesome Headphones</h2>
+            <p class="Product-description">High-quality wireless headphones with noise cancellation and long battery life.</p>
+            <p class="Product-price">Rs.2000 INR</p>
+        </div>
+
+    </div>
+</body>
+</html>
+
+CSS:body{
+    margin: 0;
+    padding: 40px;
+    background-color: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    background-color: palevioletred;
+    border-radius: 12p;
+    overflow: hidden;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease,box-shadow 0.3s ease;
+}
+.card img {
+    width: 100%;
+    height: auto;
+}
+.card-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.product-title{
+    font-size: 20px;
+    margin: 0;
+    color: #333;
+}
+.product-description{
+    font-size: 14px;
+    color: #666;
+}
+.product-price{
+    font-size: 18px;
+    font-weight: bold;
+    color: #2ecc71;
 }
 
 
