@@ -928,6 +928,50 @@ Ass. 15 Objective:Use custom fonts and icons to enhance a page’s look.
 </body>
 </html>
 
+Ass.16-
+Objective: Practice using CSS transformations and transitions for interactive effects.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform and Transition</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: antiquewhite;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .image-container{
+            display: flex;
+            gap: 2rem;
+        }
+        .image-container img {
+            width: 400px;
+            height: auto;
+            border-radius: 12px;
+            transition: transform 0.4s ease,box-shadow 0.4s ease;
+            cursor: pointer;
+        }
+        .image-container img:hover {
+            transform: scale(1.1) rotate(4deg);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container">
+        <img src="image/na1.jpg" alt="Image 1"/>
+        <img src="image/na2.jpeg" alt="Image 2"/>
+        <img src="image/na3.webp" alt="Image 3"/>
+    </div>
+ </body>
+ </html>
+
 
 
 
