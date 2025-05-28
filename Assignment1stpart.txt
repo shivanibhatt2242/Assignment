@@ -483,8 +483,7 @@ Read more at:
         <a href="tel:+9199264555">+9199264555</a>
     </section>
    
-    
-</body>
+ </body>
 </html>
 
 Home:
@@ -542,6 +541,29 @@ Contact:
 
     </body>
     </html>
+
+
+Assignment 11- 
+Objective: Practice adding inline CSS to style HTML elements.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style Page</title>
+</head>
+<body>
+    <body style="background-color: burlywood;">
+        <h1 style="text-align: center; font-size: 30px;">Welcome to Style Page</h1>
+        <img src="image/style.jpeg" alt="Sample Image" style="padding: 10px; border: 3px salmon; display: block; margin: 20px auto;">
+        <p style="color: blue;">This paragraph uses a custom font color.</p>
+        <p style="font-size: 25px;">This paragraph has a font size of  25px.</p>
+        <p style="font-size: 30px;">This paragraph has a font size of  30px.</p>
+        <p style="font-size: 40px;">This paragraph has a font size of  40px.</p>
+    
+</body>
+</html>
 
 Assignment 12: Practice working with images and structuring an image gallery layout.
 
