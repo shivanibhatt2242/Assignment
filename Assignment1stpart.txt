@@ -1,6 +1,7 @@
 
 Introduction to Website Design and HTML Basics:
 
+ 1. Explain the structure of an HTML document and the purpose of DOCTYPE.
 Ans1:  Structure of an HTML Documrnt:HTML (Hypertext Markup Language) is the standard markup language used to create web pages. It structures web pages using predefined tags and attributes, instructing the browser on how to display content.
 Explanation of the Structure:
 DOCTYPE Declaration (<DOCTYPE html>): This specifies the HTML version and typically indicates HTML.
@@ -9,6 +10,7 @@ Root Element (<html>):The <html> tag is the root element that encompasses the en
 Head Section (<head>): The <head> tag contains meta-information about the HTML document, such as the title, character set, and author. It includes: <meta charset="UTF-8">: Specifies the character encoding.
 Body Section (<body>):The <body> tag contains all the content that you want to display on the web page. This includes text, images, links, and other elements.  
 
+ 2. List and explain at least five common HTML tags used in website design.
 Ans:2 Common HTML Tags:
 HTML (HyperText Markup Language) is the standard language for creating web pages. It uses various tags to structure and format content. Here are some of the most commonly used HTML tags:
 <html>: The root element of an HTML document. It encapsulates all other elements.
@@ -20,6 +22,7 @@ HTML (HyperText Markup Language) is the standard language for creating web pages
 <body>: Contains the content of the HTML document, such as text, images, and links.
 <div>: Defines a division or section in an HTML document.
 
+3. Describe the difference between block-level and inline elements in HTML.
 Ans:3 Difference between block-level and inline elements in HTML.
 Block-level elements:
 Block-level elements always start on a new line and take up the full width available, stretching out to the left and right as far as it can. They create a "block" of content and can contain other block-level elements or inline elements. 
@@ -38,14 +41,14 @@ Inline elements do not start on a new line and only take up as much width as nec
 <strong>: Defines important text.
 <em>: Defines emphasized text.
 
-Assignment 1:
 
+Assignment 1-
+Objective: Understand the basic structure of an HTML document and practice using
+ commontags
 Basic HTML Document Structure:
 
 Practical 1:Understand the basic structure of an HTML document and practice using
 common tags.
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -72,7 +75,8 @@ common tags.
 </body>
 </html>
 
-Assignment 2:Practice using list tags and linking to other pages:
+Assignment 2-
+Objective: Practice using list tags and linking to other pages.
 
 <!DOCTYPE html>
 <html lang="en">
@@ -100,7 +104,8 @@ Assignment 2:Practice using list tags and linking to other pages:
 </body>
 </html>
     
-Assignment 3:Learn how toadd images and embedvideos in HTML:
+Assignment 3-
+Objective: Learn how toadd images and embedvideos in HTML.
 
 <!DOCTYPE html>
 <html lang="en">
@@ -121,7 +126,8 @@ Assignment 3:Learn how toadd images and embedvideos in HTML:
 </body>
 </html>
 
-Assignment 4:Learn how tocreate forms using HTML:
+Assignment 4-
+Objective: Learn how to create forms using HTML.
 
 <!DOCTYPE html>
 <html lang="en">
@@ -161,7 +167,8 @@ Assignment 4:Learn how tocreate forms using HTML:
 </body>
 </html>
 
-Assignment 5: Practice using table tags to organize data:
+Assignment 5-
+Objective: Practice using table tags to organize data
 
 <!DOCTYPE html>
 <html lang="en">
@@ -204,7 +211,8 @@ Assignment 5: Practice using table tags to organize data:
 </body>
 </html>
 
-Assignment 6:Combine different HTML tags to create a basic profile page:
+Assignment 6:
+Objective: Combine different HTML tags to create a basic profile page.
 
 <!DOCTYPE html>
 <html lang="en">
@@ -249,7 +257,9 @@ Assignment 6:Combine different HTML tags to create a basic profile page:
 </body>
 </html>
 
-Assignment 7:  Practice building a basic navigation bar:
+Assignment 7:.
+Objective: Practice building a basic navigation bar.
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -297,7 +307,8 @@ Assignment 7:  Practice building a basic navigation bar:
 </body>
 </html>
 
-Assignment 8:: Practice linking between pages and organizing content across multiple pages.
+Assignment 8:
+Objective: Practice linking between pages and organizing content across multiple pages.
 
 <!DOCTYPE html>
 <html lang="en">
@@ -402,7 +413,8 @@ Portfolio.html:
 </body>
 </html>
     
-Assignment 9:Practice embedding media and external content:
+Assignment 9:
+Objective: Practice embedding media and external content.
 
 <!DOCTYPE html>
 <html lang="en">
@@ -423,7 +435,8 @@ Assignment 9:Practice embedding media and external content:
 </body>
 </html>
 
-Assignment 10: Learn and practice using semantic HTML elements:
+Assignment 10:
+Objective: Learn and practice using semantic HTML elements.
 
 <!DOCTYPE html>
 <html lang="en">
