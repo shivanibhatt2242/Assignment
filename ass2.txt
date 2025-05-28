@@ -1,7 +1,8 @@
 Theory Assignments:
 2. Introduction to CSS and Styling Basics-
 
-1:Difference between inline, internal, and external CSS:
+ 1. Explain the difference between inline, internal, and external CSS.
+ Ans:Difference between inline, internal, and external CSS:
 
 Inline styles are styles that are applied to a specific element within the body section of the webpage. 
 
@@ -13,9 +14,8 @@ An external style sheet is a separate CSS file that can be accessed by creating 
 Inline CSS styles an individual HTML element directly, internal CSS styles an entire HTML document within the <head> section, 
 and external CSS styles multiple HTML documents by linking to a separate CSS file. 
 
-2:CSS selectors and list the types of selectors 
-
-CSS Selectors:CSS selectors are used to find or select the HTML elements you want to style.
+2. Describe CSS selectors and list the types of selectors (e.g., element, class, id).
+Ans-CSS Selectors:CSS selectors are used to find or select the HTML elements you want to style.
 
 We can divide CSS selectors into five categories:
 
@@ -25,7 +25,8 @@ Pseudo-class selectors select elements based on a certain state.
 Pseudo-elements selectors select and style a part of an element.
 Attribute selectors select elements based on an attribute or attribute value.
 
-3: The CSS box model and its components:
+3. Discuss the CSS boxmodel and its components.
+Ans- The CSS box model and its components:
  The "box model" is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. 
 It consists of: content, padding, borders and margins.
 Explanation of the different parts:
@@ -36,7 +37,8 @@ Border - A border that goes around the padding and content
 Margin - Clears an area outside the border. The margin is transparent
 The box model allows us to add a border around elements, and to define space between elements. 
 
-Ass 1:: Practice basic text styling using CSS
+Objective: Practice basic text styling using CSS.
+Ass 1: Practice basic text styling using CSS
 
 <!DOCTYPE html>
 <html lang="en">
@@ -68,6 +70,7 @@ Ass 1:: Practice basic text styling using CSS
 </body>
 </html>
 
+Objective: Practice using colors and background properties.
 Ass 2: Practice using colors and background properties:
 
 <!DOCTYPE html>
@@ -130,6 +133,7 @@ body{
     text-align: center;
 }
 
+Objective: Learn how touse borders, rounded corners, and shadows.
 Ass 3: Learn how to use borders, rounded corners, and shadows.
 
 <!DOCTYPE html>
@@ -174,6 +178,7 @@ Ass 3: Learn how to use borders, rounded corners, and shadows.
 </body>
 </html>
 
+Objective: Practice customizing list styles.
 Ass 4: : Practice customizing list styles:
 
 <!DOCTYPE html>
@@ -241,6 +246,7 @@ body{
 }
 
 
+Objective: Style a basic navigation bar using CSS.
 Ass 5: Style a basic navigation bar using CSS:
 
 <!DOCTYPE html>
@@ -288,6 +294,8 @@ body{
     color: chocolate;
 }
 
+
+Objective: Learn to use Flexbox for creating responsive layouts
 Ass 6:Learn to use Flexbox for creating responsive layouts:
 
 <!DOCTYPE html>
@@ -353,6 +361,7 @@ body{
     }
 }
 
+Objective: Use CSS Grid for creating a gallery layout.
 Ass 7:Use CSS Grid for creating a gallery layout:
 
 <!DOCTYPE html>
@@ -401,6 +410,7 @@ body{
     border-radius: 5px;
 }
 
+Objective: Practice styling buttons with CSS.
 Ass 8:Practice styling buttons with CSS:
 
 <!DOCTYPE html>
@@ -460,6 +470,8 @@ Ass 8:Practice styling buttons with CSS:
 }
 
 Ass 9:
+Objective: Learn how tomake aresponsive layout using media queries.
+
 +!DOCTYPE html>
 <html lang="en">
 <head>
@@ -530,6 +542,7 @@ Ass 9:
  </body>
 </html>
 
+Objective: Practice styling forms with CSS.
 Ass 10:Practice styling forms with CSS:
 
 <!DOCTYPE html>
@@ -605,6 +618,7 @@ body{
     background-color: black;
 }
 
+Objective: Learn how touse pseudo-classes and pseudo-elements for styling.
 Ass 11:Learn how touse pseudo-classes and pseudo-elements for styling:
 
 <!DOCTYPE html>
@@ -656,6 +670,7 @@ Ass 11:Learn how touse pseudo-classes and pseudo-elements for styling:
 </body>
 </html>
 
+Objective: Practice using CSS variables to maintain color and theme consistency.
 Ass 12:  Objective: Practice using CSS variables to maintain color and theme consistency.
 
 <!DOCTYPE html>
@@ -716,7 +731,7 @@ footer{
     
 }
 
-
+Objective: Learn how tocreate basic CSS animations.
 Ass 13:  Learn how to create basic CSS animations:
 
 <!DOCTYPE html>
@@ -751,6 +766,7 @@ Ass 13:  Learn how to create basic CSS animations:
     cursor: pointer;
 }
 
+Objective: Combine various CSS skills to style a product card.
 Ass 14: Combine various CSS skills to style a product card:
 <!DOCTYPE html>
 <html lang="en">
@@ -817,6 +833,7 @@ CSS:body{
     color: #2ecc71;
 }
 
+Objective: Use custom fonts and icons to enhance a page’s look.
 Ass. 15 Objective:Use custom fonts and icons to enhance a page’s look.
 
 <!DOCTYPE html>
