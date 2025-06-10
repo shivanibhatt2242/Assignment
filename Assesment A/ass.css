@@ -1,0 +1,72 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+}
+.container{
+    background: white;
+    padding: 20px;
+   border-radius: 30px;
+   width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.icon {
+    width: 50px;
+    margin-bottom: 10px;
+}
+label{
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: auto;
+    text-align: left;
+    font-size: 2em;
+
+}
+
+input{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    box-sizing: border-box;
+}
+select{
+    width: 100%;
+    padding: 10px;
+}
+button{
+    margin-top: 30px;
+    width: 100%;border: none;
+    cursor: pointer;
+    background-color: blue;
+    padding: 10px;
+    border: none;
+}
+#result {
+    margin-top: 15px;
+    color: #333;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="ass.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="Converter-box">
+            <img src="image/currrency.jpeg" alt="Currency Icon" class="Icon"><br>
+            <h2>CURRENCY CONVERTER</h2>
+            <label for="amount">Amount</label>
+            <input type="text" id="amount" placeholder="100" required />
+        </div>
+        <div class="dropdown">
+            <select id="fromCurrency">
+                <option value="USD">USD</option>
+            </select>
+            <select id="toCurrency">
+                <option value="INR">INR</option>
+            </select>
+        </div>
+        <button onclick="convert()">Convert</button>
+        <p id="result"></p>
+        <label for="result">Result</label>
+        <input type="text" id="amount">
+    </div>
+    </div>
+    <script>
+        function convertCurrency(){
+    let amount = parseFloat(document.getElementById("amount").value);
+    let fromCurrency= document.getElementById("fromCurrency").value;
+    let toCurrency = document.getElementById("toCurrency").value;
+    if (isNaN(amount) || amont <= 0){
+        document.getElementById("result").innerText="Please enter a valid amount.";
+        return;
+    }
+    let exchangeRate = 83.20;
+    let convertedAmount = amount*exchangeRate;
+
+    document.getElementById("result").innerText=
+    `${amount} ${fromCurrency} = ${convertedAmount.toFixed(2)} ${toCurrency}`;
+}
+</script>
+</body>
+
+</html>
