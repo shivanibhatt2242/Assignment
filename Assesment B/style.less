@@ -1,0 +1,104 @@
+@primary-color: #333;
+@accent-color: #f60;
+@bg-dark: #2c3e50;
+@text-light: #fff;
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+}
+header {
+    background: @primary-color;
+    color: @text-light;
+    display: flex;
+    justify-content: center;
+        padding: 1em;
+}
+
+    .logo{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5em;
+    }
+    nav ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+     li{
+        margin-left: 1.5em;
+        cursor: pointer;
+    }
+}
+.intro {
+    display: grid;
+    padding: 2em;
+    background: white;
+
+.text {
+    flex: 1;
+    h2 {
+        color: @primary-color;
+    }
+    button{
+        background: @accent-color;
+        border:none;
+        padding: 0.5em 1em;
+        color:white;
+        margin-top: 1em
+    }
+}
+.image {
+    flex: 1;
+    img{
+        width: 100%;
+    }
+  }
+}
+.features {
+    padding: 2em;
+    h3{
+        color: @primary-color;
+    }
+    .cards{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 1em;
+    
+.card {
+    background: white;
+    padding: 1em;
+    flex: 3;
+    margin: 0 1em;
+button{
+    background: @accent-color;
+    color: white;
+    border: none;
+    padding: 0.5em;
+    margin-top: 1em;
+           } 
+        }  
+    }
+}
+footer {
+    background: @bg-dark;
+    color:@text-light;
+    display: flex;
+    justify-content:space-around;
+    padding:2em;
+
+div {
+    flex: 2;
+    h4 {
+        margin-bottom: 0.5em;
+    }
+    ul{
+        list-style: none;
+        padding: 10;
+        li{
+            margin-bottom: 1em;
+          }
+       }
+   }
+}
