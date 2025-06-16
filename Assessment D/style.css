@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px;
+    background: linear-gradient(to bottem right,#ffa07a,#ffd1dc);
+}
+h2{
+    color: darkred;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+.card{
+    width: 180px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background: #fff;
+    box-shadow: 2px 2px 5px #aaa;
+    text-align: center;
+}
+.card-title{
+    font-weight: bold;
+    color: teal;
+}
+.card img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+button{
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #c9302c;
+}
