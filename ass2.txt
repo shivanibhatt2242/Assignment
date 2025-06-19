@@ -1973,7 +1973,131 @@ column layout on desktop and a 1-column layout on mobile.
     }
   }
 
- 3. Writeamixin in Sass for a responsive card component that can adjust its layout based on
+10. Advanced CSS: Sass and Less
+ 1. Describe the benefits of using a CSS preprocessor like Sass or Less.
+
+Ans 1:The benefits of using a CSS preprocessor Sass:Sass is one of the most widely used CSS preprocessors. It adds features such as variables, nesting, mixins, and functions,
+ which help in writing clean and organized styles.One of the great benefits of using a CSS pre-processor like SASS is the ability to use variables. A variable allows you to store a value or a set of values, and to reuse these variables throughout your SASS files as many times you want and wherever you want. 
+Easy, powerful, and useful.
+
+Less:Less (Leaner Style Sheet) is a dynamic preprocessor style sheet language that can be compiled into Cascading Style Sheets (CSS) 
+and run on the client side or server side.LESS preprocessor easily compiles into standard CSS, before the web browser starts rendering a web page. 
+Compiled CSS files can be easily uploaded to a production web server.
+
+ 2. Explain variables, nesting, and mixins in Sass.
+Ans 2:Sass Variables:
+Variables are a way to store information that you can re-use later.
+With Sass, you can store information in variables, like:
+strings
+numbers
+colors
+booleans
+lists
+nulls
+Sass uses the $ symbol, followed by a name, to declare variables.
+
+SASS Nesting:SASS Nesting makes it easier and more efficient to write CSS by allowing you to nest your selectors inside one another, 
+mimicking the structure of your HTML.
+This removes the need to repeatedly write out parent selectors, improving readability and maintainability of your styles. 
+SASS will compile the nested styles into standard CSS by automatically combining the selectors.
+Sass Nested Properties:Many CSS properties have the same prefix, like font-family, font-size and font-weight or text-align, 
+text-transform and text-overflow.
+
+Mixins in Sass.A mixin lets you make groups of CSS declarations that you want to reuse throughout your site It helps keep your Sass very DRY. 
+You can even pass in values to make your mixin more flexible.
+Mixins are useful when a programmer wants to share functionality between different classes.
+Instead of repeating the same code over and over again, the common functionality can simply be grouped into a mixin and then included into 
+each class that requires it.
+
+ 3. Describe the purpose of inheritance and partials in Sass.
+Ans 3:Inheritance in sass:Sass allows us to inherit properties from other selectors to reduce the amount of code we 
+have to type and/or combining we have to do.
+As an example, let’s consider that we have two buttons. They look exactly the same except for the font and background colors.
+We can define a basic button style, then let each of the two buttons inherit all the properties from it and add their own custom ones.
+
+Partials in Sass:A partial is a Sass file named with a leading underscore. You might name it something like _partial.scss . 
+The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. 
+Sass partials are used with the @use rule.
+
+ Practical Assignments-
+ 1. Create a Sass file with partials for typography, layout, and colors, then import them into a
+ main stylesheet.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS Layout Example</title>
+    <link rel="stylesheet" href="prac2.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my website</h1>
+        <p>This is an example of using SASS partials for colors,typography and layout.</p>
+    </div>
+    <div class="row">
+        <div class="col" style="background-color: #e3f2fd;">Column 1</div>
+        <div class="col" style="background-color: pink;">Column 2</div>
+        <div class="col" style="background-color: #ffe4b5;">Column 3</div>
+    </div>
+    
+</body>
+</html>
+
+CSS File-
+
+$card-bg: #ffffff;
+$card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$border-radius: 12px;
+$spacing: 20px;
+$font-sm: 14px;
+$font-md: 16px;
+$font-lg: 18px;
+
+
+@mixin responsive-card {
+  background-color: $card-bg;
+  border-radius: $border-radius;
+  box-shadow: $card-shadow;
+  padding: $spacing;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing;
+  font-size: $font-md;
+
+  @media (max-width: 768px) {
+    font-size: $font-sm;
+    padding: 16px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    font-size: $font-md;
+    padding: 20px;
+    flex-direction: row;
+  }
+
+  @media (min-width: 1025px) {
+    font-size: $font-lg;
+    padding: 24px;
+    flex-direction: row;
+  }
+}
+.card {
+    @include responsive-card;
+  
+    img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 8px;
+    }
+  
+    .content {
+      flex: 1;
+    }
+  }
+
+ 2. Write a mixin in Sass for a responsive card component that can adjust its layout based on
  screen size.
 
 <!DOCTYPE html>
@@ -2050,52 +2174,6 @@ $font-lg: 18px;
     flex-direction: row;
   }
 }
-
-10. Advanced CSS: Sass and Less
- 1. Describe the benefits of using a CSS preprocessor like Sass or Less.
-
-Ans 1:The benefits of using a CSS preprocessor Sass:Sass is one of the most widely used CSS preprocessors. It adds features such as variables, nesting, mixins, and functions,
- which help in writing clean and organized styles.One of the great benefits of using a CSS pre-processor like SASS is the ability to use variables. A variable allows you to store a value or a set of values, and to reuse these variables throughout your SASS files as many times you want and wherever you want. 
-Easy, powerful, and useful.
-
-Less:Less (Leaner Style Sheet) is a dynamic preprocessor style sheet language that can be compiled into Cascading Style Sheets (CSS) 
-and run on the client side or server side.LESS preprocessor easily compiles into standard CSS, before the web browser starts rendering a web page. 
-Compiled CSS files can be easily uploaded to a production web server.
-
- 2. Explain variables, nesting, and mixins in Sass.
-Ans 2:Sass Variables:
-Variables are a way to store information that you can re-use later.
-With Sass, you can store information in variables, like:
-strings
-numbers
-colors
-booleans
-lists
-nulls
-Sass uses the $ symbol, followed by a name, to declare variables.
-
-SASS Nesting:SASS Nesting makes it easier and more efficient to write CSS by allowing you to nest your selectors inside one another, 
-mimicking the structure of your HTML.
-This removes the need to repeatedly write out parent selectors, improving readability and maintainability of your styles. 
-SASS will compile the nested styles into standard CSS by automatically combining the selectors.
-Sass Nested Properties:Many CSS properties have the same prefix, like font-family, font-size and font-weight or text-align, 
-text-transform and text-overflow.
-
-Mixins in Sass.A mixin lets you make groups of CSS declarations that you want to reuse throughout your site It helps keep your Sass very DRY. 
-You can even pass in values to make your mixin more flexible.
-Mixins are useful when a programmer wants to share functionality between different classes.
-Instead of repeating the same code over and over again, the common functionality can simply be grouped into a mixin and then included into 
-each class that requires it.
-
- 3. Describe the purpose of inheritance and partials in Sass.
-Ans 3:Inheritance in sass:Sass allows us to inherit properties from other selectors to reduce the amount of code we 
-have to type and/or combining we have to do.
-As an example, let’s consider that we have two buttons. They look exactly the same except for the font and background colors.
-We can define a basic button style, then let each of the two buttons inherit all the properties from it and add their own custom ones.
-
-Partials in Sass:A partial is a Sass file named with a leading underscore. You might name it something like _partial.scss . 
-The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. 
-Sass partials are used with the @use rule.
 
 
 
