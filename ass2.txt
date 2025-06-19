@@ -1664,9 +1664,9 @@ Grid was designed for two-dimensional layout - rows, and columns at the same tim
 
 2.Describe the CSS Grid properties grid-template-columns and grid-template-rows.
 All CSS Grid Properties
-Property	              Description
-grid-template-columns	      Specifies the size of the columns, and how many columns in a grid layout
-grid-template-rows	      Specifies the size of the rows in a grid layout
+Property	                     Description
+grid-template-columns	        Specifies the size of the columns, and how many columns in a grid layout
+grid-template-rows	           Specifies the size of the rows in a grid layout
 justify-content	              Horizontally aligns the whole grid inside the container (when total grid size is smaller than container)
 
  3. Explain the purpose of grid-area and how it is used tocreate complex layouts.
@@ -1972,9 +1972,6 @@ column layout on desktop and a 1-column layout on mobile.
       grid-template-columns: 1fr;
     }
   }
-
-10. Advanced CSS: Sass and Less
-
 
  3. Writeamixin in Sass for a responsive card component that can adjust its layout based on
  screen size.
