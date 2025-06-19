@@ -972,6 +972,1133 @@ Objective: Practice using CSS transformations and transitions for interactive ef
  </body>
  </html>
 
+Assignment-3 
+Theory Assignments
+
+Q.1 Define responsive design and its importance in modern web development.
+
+Responsive Design with Media Queries:
+Responsive Web Design:Responsive Web Design is about using HTML and CSS to automatically resize, hide, shrink, 
+or enlarge, a website, to make it look good on all devices (desktops, tablets, and phones).
+
+Importance of responsive design in modern web development:Responsive design is a forward-thinking approach that can help future-proof your
+website. By adapting to various devices and screen sizes, responsive design ensures that your site 
+remains accessible and functional for users regardless 
+of new technology that may be introduced down the line.
+
+Techniques Used in Responsive Design:
+Flexible Grids: Layouts that adjust to fit different screen sizes. 
+Flexible Images: Images that scale appropriately without distortion. 
+CSS Media Queries: Allowing developers to define specific styles for different screen sizes.
+Mobile-First Approach: Designing the website for mobile first, then adapting it for larger screens.  
+
+Q.2. Explain the role of media queries in responsive design.
+
+Media queries are a cornerstone of responsive design, allowing websites to adapt to different screen sizes and devices. They enable developers to apply specific CSS styles based on device characteristics like width, height, resolution, and orientation, 
+ensuring a consistent and optimized user experience across all platforms.
+
+Conditional Styling:
+Media queries use CSS's @media rule to conditionally apply CSS styles based on device characteristics. 
+
+Breakpoints:
+They define breakpoints, specific screen sizes or other features, where the styles change. 
+
+Device-Specific Styles:
+Different styles can be applied for different devices, such as displaying a three-column layout on a wide screen and a 
+single column on a narrow screen. 
+
+Q.3  Describe how viewportsettings affect mobile displays.
+
+Viewport settings in mobile display determine how a webpage is rendered and displayed on a mobile device, impacting the user experience and overall website functionality. They control aspects like the initial zoom level, page width, 
+and the relationship between the rendered page and the device's screen size. 
+
+The Viewport: A-Visible Area:
+The viewport is the area of the web page that is currently visible on the screen. 
+
+B-Device-Specific:
+The viewport size varies depending on the device's screen size and resolution. 
+
+C-Virtual Window:
+Mobile browsers often render pages within a virtual viewport, which may be larger than the actual screen's width. 
+This allows for the browser to scale the page down to fit the device's display. 
+
+2-. How Viewport Meta Tag is Used:
+width=device-width:
+This setting instructs the browser to set the viewport's width to the device's screen width. 
+
+initial-scale=1.0:
+This setting ensures that the page is initially displayed at a 1:1 zoom ratio. 
+
+Responsive Design with Media Queries.
+
+Practical Assignments-
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main{
+        flex:3;
+        padding: 20px;
+        background-color: #f4f4f4;
+    }
+    .sidebar{
+        flex: 1;
+        padding: 20px;
+        background-color: #ddd;
+    }
+    /* Media Query for screens smaller than 768px */
+
+    @media(max-width:  768px){
+        .container{
+            flex-direction: column;
+        }
+        .sidebar{
+            order: 2; /*moves below the main content */
+        }
+        .main {
+            order: 1;
+        }
+    }
+ </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <h1>Main Content</h1>
+            <p>This is the main content area.On smaller screens,the sidebar will move below this section.</p>
+        </div>
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This sidebar will move below the main content on smaller screens.</p>
+        </div>
+    </div>
+</body>
+</html>
+
+ 4. Introduction to Bootstrap-
+
+Theory Assignments-
+ 
+Q.1- What is Bootstrap, and why is it useful for website design?
+
+Bootstrap is a free, open-source CSS framework that simplifies and accelerates front-end web development by providing pre-built components and styling for various web elements. It's particularly useful for creating responsive, 
+mobile-first websites that adapt well to different devices and screen sizes. 
+
+Here's why Bootstrap is useful for website design:
+
+1. Speed and Efficiency: Bootstrap offers a vast collection of pre-designed components like buttons, navigation bars, forms, tables, and more, reducing the need to write CSS from scratch. This saves time and effort, 
+allowing developers to focus on the unique design and functionality of a website. 
+
+2. Responsive Design: Bootstrap's grid system and responsive CSS classes ensure that websites look good and function correctly on various devices, 
+   from desktops to smartphones. 
+
+3. Consistent Design: By using pre-built components, Bootstrap helps maintain a consistent visual style throughout a website, 
+   making it more cohesive and professional.
+ 
+4. Cross-Browser Compatibility: Bootstrap is designed to work well across different web browsers, minimizing compatibility issues. 
+
+6. Ease of Learning and Customization: Bootstrap is relatively easy to learn and customize, even for beginners. Its well-documented API and customizable features make 
+   it a versatile tool for both novice and experienced developers. 
+
+Q-2 . Explain the Bootstrap grid system and how it helps create responsive layouts.
+
+The Bootstrap grid system is a framework using rows and columns to structure website layouts, making them adaptable to different screen sizes. 
+It helps create responsive designs by allowing content to rearrange automatically based on the viewport. 
+
+Key Features and How It Works:
+12-Column Grid:
+Bootstrap's grid system is built around a 12-column layout, meaning you can divide a row into a maximum of 12 columns. 
+
+Responsive Classes:
+Bootstrap provides responsive classes (e.g., col-sm-, col-md-, col-lg-) 
+that control the width of columns at different screen sizes (small, medium, large, etc.). 
+
+Gutters:
+Bootstrap provides gutters (gaps between columns) that can be adjusted or removed. 
+
+Flexbox-Based:
+Bootstrap's grid system is built using flexbox, a web layout technology, allowing for flexible and responsive column arrangements. 
+
+How it Creates Responsive Layouts:
+
+Automatic Column Rearrangement:
+By using the responsive classes (e.g., col-md-6 means the column takes up half the width on medium-sized screens), 
+columns will automatically rearrange themselves when the screen size changes. 
+
+Stacking on Smaller Screens:
+On smaller screens, columns can be made to stack on top of each other 
+(e.g., col-sm-12 makes the column take up the full width on small screens). 
+
+Customizable Gutters:
+Gutters can be adjusted or removed to fine-tune the spacing between columns, further enhancing the visual layout. 
+
+Semantics and Maintainability:
+Bootstrap's grid system encourages semantic markup, making it easier to understand and maintain the layout. 
+
+Q-3 List and explain at least three Bootstrap components (e.g., navbar, cards, buttons).
+
+Navigation Bars:A navigation bar is a navigation header that is placed at the top of the page.
+With Bootstrap, a navigation bar can extend or collapse, depending on the screen size.
+
+A standard navigation bar is created with <nav class="navbar navbar-default">.
+
+Inverted Navigation Bar
+If you don't like the style of the default navigation bar, Bootstrap provides an alternative, black navbar:
+
+Navigation bars can also hold dropdown menus.
+
+The following example adds a dropdown menu for the "Page 1" button:
+
+The .navbar-right class is used to right-align navigation bar buttons.
+
+In the following example we insert a "Sign Up" button and a "Login" button to the right in the navigation bar. 
+We also add a glyphicon on each of the two new buttons:
+
+
+Buttons:Use Bootstrap's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+
+Bootstrap provides different styles of buttons:
+To achieve the button styles above, Bootstrap has the following classes:
+
+.btn
+.btn-default
+.btn-primary
+.btn-success
+.btn-info
+.btn-warning
+.btn-danger
+.btn-link
+
+The button classes can be used on an <a>, <button>, or <input> element.
+
+
+Cards:Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.
+
+A card is a flexible and extensible content container. It includes options for headers and footers, a wide variety of content, contextual background colors, and powerful display options. If you’re familiar with Bootstrap 3, 
+cards replace our old panels, wells, and thumbnails. Similar functionality to those components is available as modifier classes for cards.
+
+Example 
+Cards are built with as little markup and styles as possible, but still manage to deliver a ton of control and customization. Built with flexbox, they offer easy alignment and mix well with other Bootstrap components. They have no margin by default, 
+so use spacing utilities as needed.
+
+Practical Assignment-
+ 1. Redesign the HTMLwebpageusing Bootstrap to:
+ o Implementaresponsive grid layout for the header, main content, and footer.
+ o AddBootstrapbuttons and a styled formusing Bootstrap classes.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Registration Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">"
+</head>
+<style>
+    body{
+        background-color: aliceblue;
+    }
+    .brand{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 45px;
+        color: #262626;
+    }
+    .form-container{
+        max-width: 400px;
+        margin: auto;
+        margin-top: 80px;
+        padding: 2rem;
+        background: #ffffff;
+        border: 1px solid #dbdbdb;
+        border-radius: 8px;
+    }
+    .divider{
+        text-align: center;
+        margin: 20px 0;
+    }
+    .divider hr{
+        margin: 10px 0;
+    }
+    .switch-link a {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .switch-link a{
+        text-decoration: none;
+        color: #0095f6;
+    }
+    .text-center a {
+        text-decoration: none;
+    
+    }
+
+</style>
+<body>
+    <div class="form-container">
+        <div class="text-center mb-4">
+            <form action="" id="loginform">
+                <div class="mb-3">
+                    <input type="text"  class="form-control" placeholder="Username or Email" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password"  class="form-control" placeholder="Password"
+                     required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Log In</button>
+                </div>
+                <div class="divider">
+                    <hr>
+                    <small>OR</small>
+                    <hr>
+                </div>
+                <div class="text-center">
+                    <a href="#">Forgot Password?</a>
+                </div>
+
+            </form>
+            <div class="switch-link">
+                Don't have account?<a href="#" onclick="">Sign Up</a>
+            </div>
+            <div class="form-container" id="registerContainer">
+                <div class="text-center mb-4">
+                    <div class="brand">Instragram</div>
+                </div>
+            </div>
+            <form action="" id="registerForm">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Username" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email Address" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" placeholder="Password" required>
+
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" placeholder="Confirm Password" required>
+                    </div>
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-success">Sign Up</button>
+                    </div>
+
+            </form>
+            <div class="switch-link">
+                Have an account?<a href="#" onclick="">Log In</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+    
+</body>
+</html>
+
+2- Createa simple portfolio page with Bootstrap’s card component to display portfolio items in
+ a grid format.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+  rel="stylesheet">
+<body>
+  <header class="bg-dark text-white text-center py-4">
+    <h1>My Portfolio</h1>
+    <p class="lead">Projects I've Worked On</p>
+  </header>
+ <main class="container my-5">
+    <div class="row g-4">
+    <div class="col-md-4">
+        <div class="card">
+          <img src="jwel1.jpeg" class="card-img-top" width="200" height="200" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Project One</h5>
+            <p class="card-text">I have made a Jewellery Website.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="ecom1.jpeg" class="card-img-top" width="200" height="200" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project Two</h5>
+            <p class="card-text">I have made a E-Commerce Website.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="buss1.jpeg" class="card-img-top"  width="200" height="200" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Project Three</h5>
+            <p class="card-text">I have made Business Website.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-light text-center p-3">
+    <p class="mb-0">&copy; 2025 My Portfolio. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
+
+5. Advanced Bootstrap Components-
+ Theory Assignments-
+
+ 1. Explain how modals and carousels work in Bootstrap.
+
+Modals in Bootstrap:Use Bootstrap’s JavaScript modal plugin to add dialogs to your site for lightboxes, 
+user notifications, or completely custom content.
+How it works-
+Modals are built with HTML, CSS, and JavaScript. They’re positioned over everything else in the document 
+and remove scroll from the <body> so that modal content scrolls instead.
+
+Clicking on the modal “backdrop” will automatically close the modal.
+
+Bootstrap only supports one modal window at a time. Nested modals aren’t supported as we believe them to be poor user experiences.
+
+Modals use position: fixed, which can sometimes be a bit particular about its rendering. Whenever possible, place your modal HTML in a top-level position to avoid potential interference from other elements. 
+You’ll likely run into issues when nesting a .modal within another fixed element.
+
+Once again, due to position: fixed, there are some caveats with using modals on mobile devices. 
+
+Carousel in Bootstrap:A slideshow component for cycling through elements—images or slides of text—like a carousel.
+How it works-
+The carousel is a slideshow for cycling through a series of content, built with CSS 3D transforms and a bit of JavaScript. It works with a series of images, text, or custom markup.
+It also includes support for previous/next controls and indicators.
+
+In browsers where the Page Visibility API is supported, the carousel will avoid sliding when the webpage is not visible to the 
+user (such as when the browser tab is inactive, the browser window is minimized, etc.).
+
+Please be aware that nested carousels are not supported, and carousels are generally not compliant with accessibility standards.
+
+2- Describe the purpose of utility classes in Bootstrap and give examples.
+
+Bootstrap's utility classes are predefined CSS classes that provide quick and easy styling options for web elements. They offer a consistent and efficient way to apply common styles without writing custom CSS rules. These classes cover a range of styling needs, including layout, spacing, typography, colors, and visibility. 
+Purpose of Utility Classes:
+Simplified Styling:
+They allow you to apply styles directly in the HTML without creating additional CSS files.
+Consistent Styling:
+They ensure uniform styling across your application by using predefined classes.
+Speed and Efficiency:
+They help you quickly prototype and style elements without writing custom CSS rules.
+Flexibility:
+You can combine multiple utility classes to achieve complex styles without any custom CSS. 
+
+Examples of Bootstrap Utility Classes:
+Spacing Utilities:
+These classes control margins and paddings. 
+.m (for all sides), .mt (top), .mb (bottom), .ms (start/left), .me (end/right). 
+.p (for all sides), .pt (top), .pb (bottom), .ps (start/left), .pe (end/right). 
+Example: .m-2 adds a margin of 0.5rem on all sides. 
+Color Utilities:
+These classes change the background or text color of elements. 
+.bg-primary sets the background color to the primary color defined in Bootstrap. 
+.text-secondary sets the text color to the secondary color. 
+Display Utilities:
+These classes control how elements are displayed on the page. 
+.d-block displays an element as a block element. 
+.d-inline displays an element as an inline element. 
+.d-flex displays an element as a flex container. 
+
+Border Utilities:
+These classes control the borders of elements. 
+.border adds a border to the element. 
+.border-0 removes the border. 
+.rounded rounds the corners of the element. 
+
+
+3- Discuss the importance of customizing Bootstrap variables for unique styling.
+
+Customizing Bootstrap's CSS variables is crucial for creating unique and consistent styling across your website. It allows you to easily modify default values like colors, breakpoints, 
+and font stacks without re-compiling the framework's source code, offering a faster and more flexible approach to design. 
+
+Importance of Customizing Bootstrap Variables:
+
+Global Style Overrides:
+CSS variables enable you to override Bootstrap's default styles at a global level, making it simple to change elements like colors, border-radius, 
+and link styles for all components. 
+Consistency and Branding:
+By customizing variables, you can ensure a cohesive and branded look and feel across your entire website, 
+rather than having to write new selectors for every component. 
+Efficiency and Maintainability:
+Using CSS variables reduces the need to write extensive custom CSS, making your codebase cleaner and easier to maintain. 
+Faster Prototyping and Development:
+CSS variables allow for real-time customization within your browser's inspector, code sandbox, or during general prototyping, 
+making the design and development process faster.
+Flexibility and Control:
+Bootstrap provides a wide range of CSS variables that can be customized, giving you fine-grained control over your website's style. 
+
+How to Customize Variables:
+1. Identify the Variables:
+Explore Bootstrap's documentation and the CSS file to identify the relevant CSS variables you want to modify. 
+2. Override in Your Code:
+In your custom CSS file or within your Sass files, you can override the variables by using the --bs-<variable-name> syntax. 
+3. Test and Refine:
+After making your changes, test your website to ensure that the styles are applied correctly and refine your customizations as needed. 
+
+Practical Assignment-
+ 2. Createa contact form in a modal that opens on a button click.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Form Modal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
+  rel="stylesheet">
+</head>
+<body>
+<div class="text-center mt-5">
+  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">
+    Contact Us
+  </button>
+</div>
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="nameInput" class="form-label">Name:</label>
+            <input type="text" class="form-control" id="nameInput" placeholder="Your name">
+          </div>
+          <div class="mb-3">
+            <label for="emailInput" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="emailInput" placeholder="Your email">
+          </div>
+          <div class="mb-3">
+            <label for="messageInput" class="form-label">Message:</label>
+            <textarea class="form-control" id="messageInput" rows="4" placeholder="Your message"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
+
+6- Introduction to Tailwind CSS.
+1. Explain what Tailwind CSS is and how it differs from traditional CSS frameworks.
+Ans.-Tailwind CSS is a utility-first CSS framework that provides pre-defined classes for styling HTML elements directly without writing custom CSS. It offers a large collection of utility 
+classes for various styling attributes like colors, typography, spacing, and layout.
+
+Here's a more detailed explanation:
+Utility-First Approach:
+Tailwind focuses on providing individual utility classes for styling, rather than pre-built components with fixed styles. 
+Pre-defined Classes:
+It offers a comprehensive set of utility classes that cover a wide range of styling needs, including colors, typography, spacing, layout, and more. 
+Customizable Themes:
+Tailwind allows you to customize its default theme, enabling you to tailor the framework to your project's specific design requirements. 
+Responsive Design:
+It provides utility classes for creating responsive designs, allowing elements to adapt to different screen sizes. 
+
+Both Tailwind CSS and traditional CSS have their strengths and weaknesses in React development. Tailwind excels in rapid prototyping, consistent design systems, and easy responsiveness. 
+Traditional CSS shines in complex animations, extensive theming, and detailed control over styles.
+
+2. Describe the concept of utility-first CSS and its advantages.
+Ans.-Utility-first CSS is an approach to web development where developers use a collection of pre-designed, low-level utility classes to style HTML elements directly in the markup. These classes focus on specific properties like margins, padding,
+ colors, or text styles, rather than creating custom CSS rules. This method, popularized by Tailwind CSS,
+offers advantages like rapid development, customization, and a more direct mapping between HTML and styling. 
+Advantages of Utility-First CSS:
+
+Rapid Development:
+By using pre-defined utility classes, developers can quickly build and customize UIs without writing extensive custom CSS. 
+Customization:
+Utility-first frameworks allow for extensive customization through configuration files and by composing multiple classes to create complex designs. 
+Reduced Context Switching:
+Styling is done directly in the HTML or JSX, reducing the need to switch between files and contexts. 
+Maintainability:
+Utility classes are reusable and avoid bloating the CSS, making it easier to maintain and update projects. 
+Consistency:
+The approach naturally encourages consistency across a project by limiting the set of styles that can be used. 
+Direct Mapping:
+The styling of an element is clear by looking at the HTML, eliminating the need to jump to a separate CSS file to understand the applied styles. 
+Portability:
+The combination of structure and styling in the same place makes it easier to copy and paste UI elements across different projects.
+
+ 3. List and explain at least five common Tailwind classes.
+Ans-We'll explore each class with examples and explanations to help you understand their functionality and use cases.
+We have organized these classes into several categories: background, spacing, sizing, flexbox, grid, border, and typography. 
+ 
+Background-
+Tailwind CSS offers a wide range of background classes to set color, gradient, image, size, and more. Some key background classes include:
+
+bg-[color]: Sets the background color of an element using the pre-defined color palette. For example, bg-blue-500 sets a medium shade of blue as the background color. You can also use custom colors by extending the configuration.
+
+bg-[size]: Sets the background size using keywords like cover, contain, or specific values. For example, bg-cover scales the background image to cover the entire element,
+ maintaining the image's aspect ratio. bg-contain scales the image to fit within the element, also preserving the aspect ratio.
+
+bg-[position]: Specifies the background position using keywords like center, top, bottom, left, right, and their combinations (e.g., top-left). For example, bg-center positions the background image in the center of the element.
+
+Spacing-
+Tailwind CSS uses a spacing scale based on a base unit of 0.25rem (4 pixels). Here are some important spacing classes:
+
+p-[size]: Sets the padding for all sides of an element using the spacing scale or specific values. For example, p-4 applies 1rem (16px) padding to all sides, while p-px applies 1-pixel padding.
+
+m-[size]: Sets the margin for all sides of an element using the spacing scale or specific values. For example, m-4 applies 1rem (16px) margin to all sides, while m-px applies 1-pixel margin.
+
+Sizing-
+Tailwind CSS provides utility classes to control the width and height of elements. Some essential sizing classes are:
+
+w-[size]: Sets the width of an element using the spacing scale, fractions (e.g., 1/2, 1/3), or specific values (e.g., full, screen). For example, w-1/2 sets the width to 50% of the parent element, while w-full sets the width to 100%.
+
+h-[size]: Sets the height of an element using the spacing scale, fractions, or specific values. For example, h-1/2 sets the height to 50% of the parent element, while h-screen sets the height equal to the viewport height.
+
+Flexbox-
+Tailwind CSS also offers utility classes for creating flexible and responsive layouts with ease using the Flexbox model. Some essential flexbox classes are:
+
+flex: Activates the flexbox layout for an element, enabling you to align and distribute child elements more effectively.
+
+flex-[direction]: Sets the flex direction (e.g., flex-row, flex-col). This determines the primary axis along which child elements are placed. 
+For example, flex-row aligns items horizontally, while flex-col aligns items vertically.
+
+Grid-
+Tailwind CSS features utility classes to construct intricate and adaptable layouts with the CSS Grid system. Some fundamental grid classes are:
+
+grid: Activates the grid layout for an element, allowing you to create complex and responsive layouts using rows and columns.
+
+grid-cols-[number]: Defines the number of grid columns (e.g., grid-cols-3 for a 3-column grid). This divides the grid container into the specified number of columns, each of equal width.
+
+grid-rows-[number]: Defines the number of grid rows (e.g., grid-rows-3 for a 3-row grid). This divides the grid container into the specified number of rows, each of equal height.
+
+ 8. Advanced CSS: Flexbox-
+Theory Assignments
+1. Explain the purpose of Flexbox and its benefits for responsive design.
+
+Flexbox, or Flexible Box Layout, is a CSS layout module designed for one-dimensional content distribution, meaning it excels at arranging items in either rows or columns. Its primary purpose is to provide a more efficient way to align and distribute space among items within a container, making it easier to create responsive and flexible layouts that adapt to different screen sizes and devices. 
+Benefits for Responsive Design:
+Simplified Layout:
+Flexbox simplifies the creation of complex layouts, reducing the need for floats, positioning, and other complex CSS techniques. 
+Flexible Alignment:
+It offers powerful alignment capabilities, allowing you to easily center, space out, or align items within a container along the main or cross axis. 
+Dynamic Content Handling:
+Flexbox handles dynamic content well, automatically adjusting item sizes and distribution to fit available space, even when the 
+content is of varying sizes. 
+Responsive Behavior:
+Flexbox properties like flex-direction, justify-content, and align-items enable you to create layouts that adapt seamlessly to different 
+screen sizes and orientations.
+
+2.Describe the main properties of Flexbox.
+
+CSS Flexbox, or Flexible Box Layout, is the layout model designed to create flexible and responsive layout structures without using float or positioning. By applying display: flex to a parent container, it becomes a flex container, and its children become flex items. This allows control over the items' growth, shrinkage, 
+and space distribution. 
+1. Parent Properties:
+display: Defines a flex container.
+flex-direction: Defines the main axis direction.
+flex-wrap: Allows items to wrap onto multiple lines.
+flex-flow: Shorthand for flex-direction and flex-wrap .
+justify-content: Aligns items along the main axis.
+align-content: Aligns items along the cross axis.
+align-items: Aligns multiple lines of items on the cross axis.
+
+2. Children/Flex-items Properties:
+order: Changes the order of items without altering the source order.
+flex-grow: Allows an item to grow to fill available space.
+flex-shrink: Allows an item to shrink if there's insufficient space.
+flex-basis: Defines the initial size of an item.
+flex: Shorthand for flex-grow , flex-shrink , and flex-basis .
+align-self: Aligns a single item within the flex container.
+
+3.Discuss the difference between flex-grow, flex-shrink, and flex-basis.
+Flex basis: Is an axis-independent way of providing the default size of an item along the main axis. Setting the flex basis of a child is similar to setting the width of that child if its parent is a container with a row flex direction or setting the height of a child if its parent is a container with a column flex direction. The flex basis of an item is the default size of that item, 
+the size of the item before any flex grow and flex shrink calculations are performed.
+
+Flex grow: Describes how any space within a container should be distributed among its children along the main axis. After laying out its children, 
+a container will distribute any remaining space according to the flex grow values specified by its children.
+Flex grow accepts any floating point value >= 0, with 0 being the default value. A container will distribute any remaining space among 
+its children weighted by the child’s flex grow value.
+
+Flex shrink: Describes how to shrink children along the main axis in the case that the total size of the children overflow the size of the container on the main axis. 
+flex shrink is very similar to flex grow and can be thought of in the same way if any overflowing size is considered to be negative remaining space. These two properties also work well together by allowing children to grow and shrink as needed.
+Flex shrink accepts any floating point value >= 0, with 1 being the default value. 
+A container will shrink its children weighted by the child’s flex shrink value.
+
+ 9. Advanced CSS: CSS Grid-
+1. WhatisCSS Grid, and how is it different from Flexbox?
+The basic difference between CSS grid layout and CSS flexbox layout is that flexbox was designed for layout in one dimension - either a row or a column. 
+Grid was designed for two-dimensional layout - rows, and columns at the same time.
+
+2.Describe the CSS Grid properties grid-template-columns and grid-template-rows.
+All CSS Grid Properties
+Property	              Description
+grid-template-columns	      Specifies the size of the columns, and how many columns in a grid layout
+grid-template-rows	      Specifies the size of the rows in a grid layout
+justify-content	              Horizontally aligns the whole grid inside the container (when total grid size is smaller than container)
+
+ 3. Explain the purpose of grid-area and how it is used tocreate complex layouts.
+
+The grid-area property in CSS Grid is used to define the placement of a grid item within a grid container, allowing for precise control over its position and size. It's a shorthand property that combines grid-row-start, grid-column-start, grid-row-end, and grid-column-end. By assigning names to grid areas using grid-template-areas and then referencing those names with grid-area, you can create complex and responsive layouts with ease. 
+Here's a breakdown of how grid-area contributes to creating complex layouts:
+1. Defining Grid Areas:
+grid-template-areas is used to define named grid areas within a grid container. This essentially creates a visual representation of the layout structure using a string-based syntax. 
+Each named area corresponds to a rectangular section of the grid, and the names are assigned to specific cells or ranges of cells. 
+2. Placing Grid Items: 
+grid-area is then used to place grid items (elements within the grid container) into these named areas.
+By assigning the name of a grid area to a grid item's grid-area property, you effectively place that item within the boundaries of the corresponding named area.
+3. Simplifying Layout:
+Instead of using line numbers (e.g., grid-column-start: 2; grid-column-end: 4;), you can use descriptive names, making the code more readable and maintainable. 
+This simplifies the process of creating complex layouts, especially those with multiple sections and overlapping elements. 
+4. Creating Responsive Designs: 
+CSS Grid, including the use of grid-area and grid-template-areas, is inherently responsive. You can easily adjust the grid structure and the placement of items based on different screen sizes.
+By modifying the grid-template-areas definition for different media queries, you can change the layout of your page to adapt to various devices.
+
+ Practical Assignments-
+1. Create a responsive grid layout for an image gallery with CSS Grid, displaying images in a 3
+column layout on desktop and a 1-column layout on mobile.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image Gallery</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f4f4f4;
+        }
+        .gallery-title{
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 15px;
+        }
+        .gallery img{
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        @media(max-width:768px){
+            .gallery{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="gallery-title">Responsive Image Gallery</h1>
+     <div class="gallery">
+        <img src="jwel1.jpeg" alt="Image 1" height="200" width="200">
+        <img src="buss1.jpeg" alt="Image 2" height="200" width="200">
+        <img src="ecom1.jpeg" alt="Image 3" height="200" width="200">
+        <img src="headphone.jpeg" alt="Image 4" height="200" width="200">
+        <img src="ring2.jpeg" alt="Image 5" height="200" width="200">
+        <img src="img7.png" alt="Image 6" height="200" width="200">
+
+     </div>
+ </body>
+</html>
+
+ 2. Design a multi-section page layout using CSS Grid, where sections like header, sidebar, main
+ content, and footer are arranged in a grid.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Grid Layout Page</title>
+  <link rel="stylesheet" href="multisec.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">Header</header>
+    <aside class="sidebar">Sidebar</aside>
+    <main class="main-content">Main Content</main>
+    <footer class="footer">Footer</footer>
+  </div>
+</body>
+</html>
+
+/* Reset default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Grid container */
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "sidebar main"
+      "footer footer";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+  
+  /* Layout sections */
+  .header {
+    grid-area: header;
+    background-color: #3f51b5;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: plum;
+    padding: 20px;
+  }
+  
+  .main-content {
+    grid-area: main;
+    background-color: #ffffff;
+    padding: 20px;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #3f51b5;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Responsive layout for small screens */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-areas:
+        "header"
+        "main"
+        "sidebar"
+        "footer";
+      grid-template-columns: 1fr;
+    }
+  
+    .sidebar {
+      order: 3;
+    }
+  
+    .main-content {
+      order: 2;
+    }
+  }
+
+ 3. Build a blog post layout using Grid, with a main content area, related posts sidebar, and
+ footer section.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My First Blog</title>
+  <link rel="stylesheet" href="blog.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">🌸 Shivani's Blog</header>
+    <main class="main-content">
+      <h1>🌟 My Journey into Web Development</h1>
+      <p>
+        Hello and welcome to my very first blog post! I started learning web development with a dream to create beautiful, functional websites that help people and businesses grow.
+      </p>
+      <p>
+        At first, I was overwhelmed by HTML, CSS, and JavaScript. But step by step, I learned how to structure web pages, style them, and add interactivity using simple scripts. Bootstrap made layouts easier and responsive!
+      </p>
+      <p>
+        I built my first project — a jewellery website — using HTML, CSS, JavaScript, and Bootstrap. It felt amazing to see my ideas come to life.
+      </p>
+      <p>
+        Stay with me as I share tips, tutorials, and my learning journey. Thank you for reading! 
+      </p>
+    </main>
+
+    <aside class="sidebar">
+      <h2>About Me</h2>
+      <p>👩‍💻 I'm Shivani, a passionate learner aiming to become a successful web developer.</p>
+
+      <h3>Categories</h3>
+      <ul>
+        <li>Web Design</li>
+        <li>CSS Tricks</li>
+        <li>JavaScript Basics</li>
+        <li>Portfolio Projects</li>
+      </ul>
+
+      <h3>Connect with me</h3>
+      <ul>
+        <li><a href="https://www.instagram.com/shini_bakshi" target="_blank">🔗Instagram</a></li>
+        <li><a href="https://www.linkedin.com/in/Shivani Bhatt" target="_blank">🔗Linkedin</a></li>
+        <li><a href="https://github.com/shivanibhatt2242" target="_blank">🔗 GitHub</a></li>
+      </ul>
+    </aside>
+
+    <section class="related-posts">
+      <h2>Related Posts</h2>
+      <ul>
+        <li><strong>📘 How I Built My Jewellery Website</strong></li>
+        <li><strong>🖌️ 5 CSS Tips Every Beginner Should Know</strong></li>
+        <li><strong>💡 Why You Should Learn Bootstrap</strong></li>
+        <li><strong>📚 HTML Layout Tutorial for Beginners</strong></li>
+      </ul>
+    </section>
+
+    <footer class="footer">© 2025 Shivani’s Blog. Crafted with love and Code.</footer>
+  </div>
+</body>
+</html>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "main main sidebar"
+      "related related sidebar"
+      "footer footer footer";
+    grid-template-columns: 2fr 2fr 1fr;
+    gap: 20px;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  
+  /* Layout Sections */
+  .header {
+    grid-area: header;
+    background-color: #4a90e2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .main-content {
+    grid-area: main;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+    background-color: #fff5e1;
+    padding: 20px;
+    
+  }
+  
+  .related-posts {
+    grid-area: related;
+    background-color: #e7f3ff;
+    padding: 20px;
+    
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: #4a90e2;
+    color: white;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  /* Responsive Layout */
+  @media (max-width: 768px) {
+    .container {
+      grid-template-areas:
+        "header"
+        "main"
+        "related"
+        "sidebar"
+        "footer";
+      grid-template-columns: 1fr;
+    }
+  }
+
+10. Advanced CSS: Sass and Less
+
+
+ 3. Writeamixin in Sass for a responsive card component that can adjust its layout based on
+ screen size.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Card with SASS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <img src="https://via.placeholder.com/200" alt="Sample Image">
+    <div class="content">
+      <h2>Responsive Card</h2>
+      <p>This card component adjusts its layout and font size based on the screen width. Resize the window to see it in action!</p>
+    </div>
+  </div>
+
+</body>
+</html>
+
+SCSS-
+.card {
+  @include responsive-card;
+
+  img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 8px;
+  }
+
+  .content {
+    flex: 1;
+  }
+}
+
+ SCSS
+// Variables for reuse
+$card-bg: #ffffff;
+$card-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$border-radius: 12px;
+$spacing: 20px;
+$font-sm: 14px;
+$font-md: 16px;
+$font-lg: 18px;
+
+// ✅ Mixin for responsive card
+@mixin responsive-card {
+  background-color: $card-bg;
+  border-radius: $border-radius;
+  box-shadow: $card-shadow;
+  padding: $spacing;
+  display: flex;
+  flex-direction: column;
+  gap: $spacing;
+  font-size: $font-md;
+
+  @media (max-width: 768px) {
+    font-size: $font-sm;
+    padding: 16px;
+  }
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    font-size: $font-md;
+    padding: 20px;
+    flex-direction: row;
+  }
+
+  @media (min-width: 1025px) {
+    font-size: $font-lg;
+    padding: 24px;
+    flex-direction: row;
+  }
+}
+
+10. Advanced CSS: Sass and Less
+ 1. Describe the benefits of using a CSS preprocessor like Sass or Less.
+
+Ans 1:The benefits of using a CSS preprocessor Sass:Sass is one of the most widely used CSS preprocessors. It adds features such as variables, nesting, mixins, and functions,
+ which help in writing clean and organized styles.One of the great benefits of using a CSS pre-processor like SASS is the ability to use variables. A variable allows you to store a value or a set of values, and to reuse these variables throughout your SASS files as many times you want and wherever you want. 
+Easy, powerful, and useful.
+
+Less:Less (Leaner Style Sheet) is a dynamic preprocessor style sheet language that can be compiled into Cascading Style Sheets (CSS) 
+and run on the client side or server side.LESS preprocessor easily compiles into standard CSS, before the web browser starts rendering a web page. 
+Compiled CSS files can be easily uploaded to a production web server.
+
+ 2. Explain variables, nesting, and mixins in Sass.
+Ans 2:Sass Variables:
+Variables are a way to store information that you can re-use later.
+With Sass, you can store information in variables, like:
+strings
+numbers
+colors
+booleans
+lists
+nulls
+Sass uses the $ symbol, followed by a name, to declare variables.
+
+SASS Nesting:SASS Nesting makes it easier and more efficient to write CSS by allowing you to nest your selectors inside one another, 
+mimicking the structure of your HTML.
+This removes the need to repeatedly write out parent selectors, improving readability and maintainability of your styles. 
+SASS will compile the nested styles into standard CSS by automatically combining the selectors.
+Sass Nested Properties:Many CSS properties have the same prefix, like font-family, font-size and font-weight or text-align, 
+text-transform and text-overflow.
+
+Mixins in Sass.A mixin lets you make groups of CSS declarations that you want to reuse throughout your site It helps keep your Sass very DRY. 
+You can even pass in values to make your mixin more flexible.
+Mixins are useful when a programmer wants to share functionality between different classes.
+Instead of repeating the same code over and over again, the common functionality can simply be grouped into a mixin and then included into 
+each class that requires it.
+
+ 3. Describe the purpose of inheritance and partials in Sass.
+Ans 3:Inheritance in sass:Sass allows us to inherit properties from other selectors to reduce the amount of code we 
+have to type and/or combining we have to do.
+As an example, let’s consider that we have two buttons. They look exactly the same except for the font and background colors.
+We can define a basic button style, then let each of the two buttons inherit all the properties from it and add their own custom ones.
+
+Partials in Sass:A partial is a Sass file named with a leading underscore. You might name it something like _partial.scss . 
+The underscore lets Sass know that the file is only a partial file and that it should not be generated into a CSS file. 
+Sass partials are used with the @use rule.
 
 
 
